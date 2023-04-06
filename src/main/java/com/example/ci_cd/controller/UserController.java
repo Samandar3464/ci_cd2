@@ -20,10 +20,4 @@ public class UserController {
         return userService.register(userRegisterDTO);
 
     }
-
-//    @GetMapping("/login")
-//    public ResponseEntity<?> login(@RequestBody UserLoginDto userLoginDto) {
-//        return userService.login(userLoginDto);
-//    }
-
 }
