@@ -33,9 +33,9 @@ services:
       - 5432:5432
     restart: always
     environment:
-      POSTGRES_DB: mydb
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: postgres2
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: axborot1116
   web:
     image: samandar346/ci_cd
     restart: always
@@ -44,6 +44,6 @@ services:
     depends_on:
       - db
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/mydb
-      SPRING_DATASOURCE_USERNAME: myuser
-      SPRING_DATASOURCE_PASSWORD: mypassword
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/postgres2
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: axborot1116
