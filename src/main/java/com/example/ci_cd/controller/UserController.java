@@ -21,9 +21,9 @@ public class UserController {
 
     }
 
-    @GetMapping("/login")
-    public ResponseEntity<?> login(@RequestBody UserLoginDto userLoginDto) {
-        return userService.login(userLoginDto);
-    }
+//    @GetMapping("/login")
+//    public ResponseEntity<?> login(@RequestBody UserLoginDto userLoginDto) {
+//        return userService.login(userLoginDto);
+//    }
 
 }
