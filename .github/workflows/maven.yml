@@ -66,12 +66,12 @@ jobs:
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: axror123/ci_cd_with_simply_springboot
+          image: samandar346/ci_cd
           tags: latest
           build-args: |
-            DB_URL=jdbc:postgresql://localhost:5432/mydb
-            DB_USERNAME=myuser
-            DB_PASSWORD=mypassword
+            DB_URL=jdbc:postgresql://localhost:5432/postgres2
+            DB_USERNAME=postgres
+            DB_PASSWORD=axborot1116
           registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
